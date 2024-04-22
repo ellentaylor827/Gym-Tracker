@@ -14,7 +14,9 @@ namespace gymTracker
     {
         public Form1()
         {
+            Controls.Add(new mainMenu());
             InitializeComponent();
+            this.Size = new Size(1000, 650);
         }
     }
 }

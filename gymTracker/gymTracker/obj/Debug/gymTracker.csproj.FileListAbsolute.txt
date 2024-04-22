@@ -1,0 +1,11 @@
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\bin\Debug\gymTracker.exe.config
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\bin\Debug\gymTracker.exe
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\bin\Debug\gymTracker.pdb
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.csproj.AssemblyReference.cache
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.csproj.SuggestedBindingRedirects.cache
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.mainMenu.resources
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.Properties.Resources.resources
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.csproj.GenerateResource.cache
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.csproj.CoreCompileInputs.cache
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.exe
+C:\Users\ellen\OneDrive\Documents\GitHub\Gym-Tracker\gymTracker\gymTracker\obj\Debug\gymTracker.pdb
