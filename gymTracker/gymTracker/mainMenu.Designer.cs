@@ -34,18 +34,24 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.reportIssueButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Exercise = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mainTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTab
@@ -70,7 +76,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(948, 482);
+            this.tabPage1.Size = new System.Drawing.Size(975, 523);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -106,22 +112,14 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.submitButton);
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(948, 482);
+            this.tabPage2.Size = new System.Drawing.Size(975, 523);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(449, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Log Data";
             // 
             // tabPage3
             // 
@@ -151,7 +149,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(948, 482);
+            this.tabPage4.Size = new System.Drawing.Size(975, 523);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             // 
@@ -186,6 +184,69 @@
             this.reportIssueButton.UseVisualStyleBackColor = false;
             this.reportIssueButton.Click += new System.EventHandler(this.reportIssueButton_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Exercise,
+            this.Column2,
+            this.Column3});
+            this.dataGridView1.GridColor = System.Drawing.Color.SeaGreen;
+            this.dataGridView1.Location = new System.Drawing.Point(148, 44);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(678, 426);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellValueChanged);
+            // 
+            // submitButton
+            // 
+            this.submitButton.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Location = new System.Drawing.Point(847, 422);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(110, 48);
+            this.submitButton.TabIndex = 3;
+            this.submitButton.Text = "Submit Data";
+            this.submitButton.UseVisualStyleBackColor = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Category";
+            this.Column1.Items.AddRange(new object[] {
+            "Legs",
+            "Arms",
+            "Back",
+            "Chest",
+            "Cardio",
+            "Stretches"});
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Exercise
+            // 
+            this.Exercise.HeaderText = "Exercise";
+            this.Exercise.Items.AddRange(new object[] {
+            "Cable Chest Press",
+            "Close-Grip Bench Press",
+            "Close-Grip Feet-Up Bench Press",
+            "Decline Bench Press"});
+            this.Exercise.Name = "Exercise";
+            this.Exercise.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Exercise.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Sets";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Weight";
+            this.Column3.Name = "Column3";
+            // 
             // mainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,11 +261,11 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +278,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabPage4;
@@ -225,5 +285,11 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button reportIssueButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Exercise;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

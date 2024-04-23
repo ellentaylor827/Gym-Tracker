@@ -27,5 +27,27 @@ namespace gymTracker
                 System.Diagnostics.Process.Start("https://github.com/ellentaylor827/Gym-Tracker/issues");
             }
         }
+
+        private void DataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the changed cell is in the "Color" column
+            if (e.ColumnIndex == dataGridView1.Columns["Category"].Index && e.RowIndex >= 0 )
+            {
+                DataGridViewCell changedCell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+
+                Color color = updateExerciseSelection(changedCell.Value.ToString());
+            }
+        }
+
+        public Color updateExerciseSelection(string category)
+        {
+            switch(category)
+            {
+                case "Arms":
+                    Color cellColor = Color.FromName(category);
+                    return cellColor;
+            }
+            return Color.FromName(category);
+        }
     }
 }
